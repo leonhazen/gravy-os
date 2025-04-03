@@ -117,4 +117,4 @@ modules:
         - JetBrains Mono
         - Roboto
 
-  - type: yafti # Yet another first time installer
+  # - type: yafti # Yet another first time installer
