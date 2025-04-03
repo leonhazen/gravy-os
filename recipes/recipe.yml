@@ -112,9 +112,13 @@ modules:
   - type: fonts
     fonts:
       google-fonts:
-        - Fira Code
         - Open Sans
-        - JetBrains Mono
         - Roboto
+      nerd-fonts:
+        - Hack
+        - JetBrainsMono
+        - SourceCodePro
+        - FiraCode
+        - Terminus
 
   # - type: yafti # Yet another first time installer
