@@ -17,30 +17,44 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
+  - type: bling
+    install:
+      - 1password
+      - rpmfusion
+
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/pgdev/ghostty/repo/fedora-%OS_VERSION%/pgdev-ghostty-fedora-%OS_VERSION%.repo
     install:
       - ghostty
       - steam-devices
+    remove:
+      - gnome-tour
+      - ptyxis
+
+  - type: default-flatpaks
+    system:
+      install:
+        - org.freedesktop.Platform.ffmpeg-full
+        - app.getclipboard.Clipboard
+        - org.videolan.VLC
+        - md.obsidian.Obsidian
+        - com.discordapp.Discord
+        - com.valvesoftware.Steam
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
-
-  - type: bling
-    install:
-      - 1password
-      - rpmfusion
 
   - type: gnome-extensions
     install:
       - Blur my Shell
       - Caffeine
-      - OpenWeather Refined
-      - Notifications Alert
-      - Bluetooth Battery Meter
       - Quick Settings Audio Devices Renamer
       - Quick Settings Audio Devices Hider
-      - Remove World Clocks
+      - Tiling Assistant
+      - ArcMenu
+      - Dash to Panel
+      - PiP on top
+      - Wiggle
 
   - type: fonts
     fonts:
