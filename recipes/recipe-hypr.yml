@@ -1,9 +1,9 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: gravy-os
+name: gravy-os-hypr
 # description will be included in the image's metadata
-description: Gravy baby
+description: Gravy with hyprland
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/bluefin-dx-nvidia
@@ -25,9 +25,14 @@ modules:
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/pgdev/ghostty/repo/fedora-%OS_VERSION%/pgdev-ghostty-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/
     install:
       - ghostty
       - steam-devices
+      - hyprland
+      - xdg-desktop-portal-hyprland
+      - hyprpolkitagent
+      - hyprsysteminfo
     remove:
       - gnome-tour
       - ptyxis
