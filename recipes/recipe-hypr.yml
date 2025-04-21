@@ -20,7 +20,7 @@ modules:
   - type: bling
     install:
       - 1password
-      - rpmfusion
+      - dconf-update-service
 
   - type: rpm-ostree
     repos:
@@ -33,10 +33,19 @@ modules:
       - xdg-desktop-portal-hyprland
       - hyprpolkitagent
       - hyprsysteminfo
+      - hyprsunset
+      - hyprlock
+      - hypridle
+      - pyprland
       - grimblast
     remove:
       - gnome-tour
       - ptyxis
+
+# using rpm-ostree for swww causes weird collision issues between the solopasha hyprland copr and terra
+  - type: script
+    snippets:
+      - "dnf5 install -y swww"
 
   - type: default-flatpaks
     system:

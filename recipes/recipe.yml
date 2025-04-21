@@ -20,7 +20,7 @@ modules:
   - type: bling
     install:
       - 1password
-      - rpmfusion
+      - dconf-update-service
 
   - type: rpm-ostree
     repos:
