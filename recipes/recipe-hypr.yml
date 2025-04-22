@@ -36,8 +36,16 @@ modules:
       - hyprsunset
       - hyprlock
       - hypridle
+      - hyprpicker
       - pyprland
       - grimblast
+      - matugen
+      - gvfs
+      - gtk4
+      - gtk4-layer-shell
+      - rofi-wayland
+      - eww-git
+      - wf-recorder
     remove:
       - gnome-tour
       - ptyxis
@@ -45,7 +53,7 @@ modules:
 # using rpm-ostree for swww causes weird collision issues between the solopasha hyprland copr and terra
   - type: script
     snippets:
-      - "dnf5 install -y swww"
+      - "dnf5 install -y swww aylurs-gtk-shell2 hyprpanel"
 
   - type: default-flatpaks
     system:
