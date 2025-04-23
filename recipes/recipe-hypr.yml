@@ -54,6 +54,7 @@ modules:
   - type: script
     snippets:
       - "dnf5 install -y swww aylurs-gtk-shell2 hyprpanel"
+      - "sed -i 's/^Name=hyprpolkitagent$/Name=org.hyprland.hyprpolkitagent/' /usr/share/dbus-1/services/hyprpolkitagent.service"
 
   - type: default-flatpaks
     system:
