@@ -45,7 +45,7 @@ modules:
       - gtk4
       - gtk4-layer-shell
       - rofi-wayland
-      - eww-git
+      - waybar-git
       - wf-recorder
     remove:
       - gnome-tour
