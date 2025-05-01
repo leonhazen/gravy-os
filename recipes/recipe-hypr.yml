@@ -45,6 +45,7 @@ modules:
         - waybar-git
         - wf-recorder
         - swww
+        - aquamarine
     remove:
       packages:
         - gnome-tour
