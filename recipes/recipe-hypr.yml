@@ -46,6 +46,7 @@ modules:
         - wf-recorder
         - swww
         - aquamarine
+        - aquamarine-devel
     remove:
       packages:
         - gnome-tour
