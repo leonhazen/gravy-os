@@ -47,6 +47,7 @@ modules:
         - swww
         - aquamarine
         - aquamarine-devel
+        - fedora-packager
     remove:
       packages:
         - gnome-tour
