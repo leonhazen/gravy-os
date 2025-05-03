@@ -32,6 +32,9 @@ modules:
         - ghostty
         - steam-devices
         - hyprland
+        - hyprland-devel
+        - hyprland-contrib
+        - hyprland-plugins
         - xdg-desktop-portal-hyprland
         - hyprpolkitagent
         - hyprsysteminfo
