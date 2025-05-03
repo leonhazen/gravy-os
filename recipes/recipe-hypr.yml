@@ -41,6 +41,8 @@ modules:
         - pyprland
         - grimblast
         - gtk4-layer-shell
+        - wlogout
+        - mako
         - rofi-wayland
         - waybar-git
         - wf-recorder
