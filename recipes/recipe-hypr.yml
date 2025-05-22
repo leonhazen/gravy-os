@@ -30,6 +30,7 @@ modules:
     install:
       packages:
         # - ghostty
+        - kitty
         - steam-devices
         - hyprland
         - hyprland-devel
