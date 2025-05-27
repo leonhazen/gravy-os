@@ -55,6 +55,10 @@ modules:
         - aquamarine-devel
         # - fedora-packager
         - blueman
+        - libusb-compat-0.1-devel
+        # - libusb1-devel
+        - gtk3
+        - webkit2gtk-4.1
     remove:
       packages:
         - gnome-tour
@@ -62,6 +66,8 @@ modules:
   - type: script
     snippets:
       - "sed -i 's/^Name=hyprpolkitagent$/Name=org.hyprland.hyprpolkitagent/' /usr/share/dbus-1/services/hyprpolkitagent.service"
+    scripts:
+      - install-keymapp.sh
 
   - type: default-flatpaks
     system:
