@@ -71,7 +71,6 @@ modules:
     system:
       install:
         - org.freedesktop.Platform.ffmpeg-full
-        - app.getclipboard.Clipboard
         - org.videolan.VLC
         - md.obsidian.Obsidian
         - com.discordapp.Discord
