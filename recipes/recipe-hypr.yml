@@ -57,8 +57,6 @@ modules:
         - blueman
         - libusb-compat-0.1-devel
         # - libusb1-devel
-        - gtk3
-        - webkit2gtk-4.1
     remove:
       packages:
         - gnome-tour
