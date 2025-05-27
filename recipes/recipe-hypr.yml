@@ -68,6 +68,7 @@ modules:
       - "sed -i 's/^Name=hyprpolkitagent$/Name=org.hyprland.hyprpolkitagent/' /usr/share/dbus-1/services/hyprpolkitagent.service"
     scripts:
       - install-keymapp.sh
+      - install-advcpmv.sh
 
   - type: default-flatpaks
     system:
