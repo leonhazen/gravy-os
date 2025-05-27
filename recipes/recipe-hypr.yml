@@ -80,17 +80,6 @@ modules:
         - com.discordapp.Discord
         - com.valvesoftware.Steam
 
-  - type: gnome-extensions
-    install:
-      - Blur my Shell
-      - Caffeine
-      - Quick Settings Audio Devices Renamer
-      - Quick Settings Audio Devices Hider
-      - Tiling Assistant
-      - Dash to Panel
-      - PiP on top
-      - Wiggle
-
   - type: fonts
     fonts:
       google-fonts:
