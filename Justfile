@@ -21,18 +21,22 @@ build:
             ;;
     esac
 
+prefetch:
+    @echo "Pre-fetching base image"
+    docker pull ghcr.io/ublue-os/bluefin-dx-nvidia:stable-daily
+
 # Helper recipe for the main build
-_build-main:
+_build-main: prefetch
     @echo "Building main recipe..."
     @bluebuild build ./recipes/recipe.yml
 
 # Helper recipe for the hypr build
-_build-hypr:
+_build-hypr: prefetch
     @echo "Building hypr recipe..."
     @bluebuild build ./recipes/recipe-hypr.yml
 
 # Helper recipe to build both
-_build-all:
+_build-all: prefetch
     @echo "Building both recipes..."
     @just _build-main
     @just _build-hypr
