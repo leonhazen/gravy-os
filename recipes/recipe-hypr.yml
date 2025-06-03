@@ -25,11 +25,11 @@ modules:
   - type: dnf
     repos:
       copr:
-        # - pgdev/ghostty
+        - pgdev/ghostty
         - solopasha/hyprland
     install:
       packages:
-        # - ghostty
+        - ghostty
         - kitty
         - steam-devices
         - hyprland
@@ -60,12 +60,11 @@ modules:
     remove:
       packages:
         - gnome-tour
+        - fish
 
   - type: script
     snippets:
       - "sed -i 's/^Name=hyprpolkitagent$/Name=org.hyprland.hyprpolkitagent/' /usr/share/dbus-1/services/hyprpolkitagent.service"
-    scripts:
-      - install-keymapp.sh
 
   - type: default-flatpaks
     system:

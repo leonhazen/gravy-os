@@ -36,7 +36,7 @@ _build-hypr: prefetch
     @bluebuild build ./recipes/recipe-hypr.yml
 
 # Helper recipe to build both
-_build-all: prefetch
+_build-all:
     @echo "Building both recipes..."
     @just _build-main
     @just _build-hypr
